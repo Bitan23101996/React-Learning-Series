@@ -5,7 +5,7 @@ import LoginForm from './components/LoginForm';
 import Registration from './components/Registration';
 import CourseEntrollmentForm from './components/CourseEntrollmentForm';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react"
-
+import Message from './react-basics-tutorials/Message'
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -19,13 +19,17 @@ const theme = extendTheme({ colors })
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
-      <div className="App">
-        <LoginForm />
-      </div>
-    </ChakraProvider>
-
+    <div className="App">
+      <Message />
+    </div>
   );
 }
 
 export default App;
+
+{/* <ChakraProvider theme={theme}>
+      <div className="App">
+        <LoginForm />
+        <Message />
+      </div>
+    </ChakraProvider> */}

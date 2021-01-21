@@ -47,6 +47,12 @@ label {
   border-color: #198754;
 }
 
+
+.btn-error {
+  color: #fff;
+  background-color: #f31414;
+  border-color:  #f31414;
+}
 .form-control {
   margin-bottom: 20px;
 }
