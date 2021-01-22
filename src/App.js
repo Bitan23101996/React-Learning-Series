@@ -7,6 +7,10 @@ import CourseEntrollmentForm from './components/CourseEntrollmentForm';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 import Message from './react-basics-tutorials/Message'
 import Counter from './react-basics-tutorials/Counter'
+import EventBinding from './react-basics-tutorials/EventBinding'
+import Parent from './react-basics-tutorials/Parent'
+
+
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -22,7 +26,9 @@ function App() {
   return (
     <div className="App">
       {/* <Message /> */}
-      <Counter/>
+      {/* <Counter/> */}
+      {/* <EventBinding  name="Bitan" title="Das"/> */}
+      <Parent />
     </div>
   );
 }
