@@ -6,6 +6,7 @@ import Registration from './components/Registration';
 import CourseEntrollmentForm from './components/CourseEntrollmentForm';
 import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 import Message from './react-basics-tutorials/Message'
+import Counter from './react-basics-tutorials/Counter'
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -20,7 +21,8 @@ const theme = extendTheme({ colors })
 function App() {
   return (
     <div className="App">
-      <Message />
+      {/* <Message /> */}
+      <Counter/>
     </div>
   );
 }
