@@ -10,7 +10,7 @@ import Counter from './react-basics-tutorials/Counter'
 import EventBinding from './react-basics-tutorials/EventBinding'
 import Parent from './react-basics-tutorials/Parent'
 import ConditionalRender from './react-basics-tutorials/ConditionalRender'
-
+import ListRendering from './react-basics-tutorials/ListRendering'
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -30,7 +30,8 @@ function App() {
       {/* <Counter/> */}
       {/* <EventBinding  name="Bitan" title="Das"/> */}
       {/* <Parent /> */}
-      <ConditionalRender></ConditionalRender>
+      {/* <ConditionalRender/> */}
+      <ListRendering/>
     </div>
   );
 }
