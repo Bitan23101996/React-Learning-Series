@@ -11,7 +11,9 @@ import EventBinding from './react-basics-tutorials/EventBinding'
 import Parent from './react-basics-tutorials/Parent'
 import ConditionalRender from './react-basics-tutorials/ConditionalRender'
 import ListRendering from './react-basics-tutorials/ListRendering'
-
+import Stylesheet from '../src/react-basics-tutorials/Stylesheet'
+import './appStyles.css'
+import Styles from './appStyles.module.css'
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -31,7 +33,12 @@ function App() {
       {/* <EventBinding  name="Bitan" title="Das"/> */}
       {/* <Parent /> */}
       {/* <ConditionalRender/> */}
-      <ListRendering/>
+      {/* <ListRendering/> */}
+      <Stylesheet primaryTheme={true} />
+      <div>
+        <h5 className="error-color">CSS Style Normal Way</h5>
+        <h5 className={Styles.success_color}>CSS Style Module Approach Way</h5>
+      </div>
     </div>
   );
 }

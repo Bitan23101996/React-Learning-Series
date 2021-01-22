@@ -1,0 +1,14 @@
+.heading {
+    color: orange;
+}
+
+.primary {
+    color: rgb(0, 55, 128);
+}
+
+.secondary {
+    color: rgb(0, 255, 21);
+}
+.font-xl{
+    font-size: 3rem;
+}

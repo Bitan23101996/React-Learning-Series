@@ -26,6 +26,14 @@ function ListRendering() {
     return (
         <div>
             {person}
+
+            
+            {/* This is perfectly fine as this class will applied both parent and child */}
+            <h5 className="error-color">CSS Style Normal Way</h5>
+
+            {/* This will give error as this class is only applied particular folder not it's child component */}
+            {/* <h5 className={Styles.success}>CSS Style Module Approach Way</h5> */}
+            
         </div>
     )
 }
