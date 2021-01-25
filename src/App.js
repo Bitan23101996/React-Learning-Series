@@ -18,6 +18,7 @@ import BasicReactForm from './react-basics-tutorials/BasicReactForm'
 import LifecycleA from './react-basics-tutorials/LifecycleA';
 import FragmentsInReactTable from './react-basics-tutorials/FragmentsInReactTable';
 import ParentComponent from './react-basics-tutorials/ParentComponent';
+import MemoComp from './react-basics-tutorials/MemoComp';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
