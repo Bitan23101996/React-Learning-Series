@@ -14,6 +14,8 @@ import ListRendering from './react-basics-tutorials/ListRendering'
 import Stylesheet from '../src/react-basics-tutorials/Stylesheet'
 import './appStyles.css'
 import Styles from './appStyles.module.css'
+import BasicReactForm from './react-basics-tutorials/BasicReactForm'
+
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -34,11 +36,12 @@ function App() {
       {/* <Parent /> */}
       {/* <ConditionalRender/> */}
       {/* <ListRendering/> */}
-      <Stylesheet primaryTheme={true} />
+      {/* <Stylesheet primaryTheme={true} />
       <div>
         <h5 className="error-color">CSS Style Normal Way</h5>
         <h5 className={Styles.success_color}>CSS Style Module Approach Way</h5>
-      </div>
+      </div> */}
+      <BasicReactForm/>
     </div>
   );
 }
