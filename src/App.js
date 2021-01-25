@@ -16,6 +16,7 @@ import './appStyles.css'
 import Styles from './appStyles.module.css'
 import BasicReactForm from './react-basics-tutorials/BasicReactForm'
 import LifecycleA from './react-basics-tutorials/LifecycleA';
+import FragmentsInReactTable from './react-basics-tutorials/FragmentsInReactTable';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -43,7 +44,8 @@ function App() {
         <h5 className={Styles.success_color}>CSS Style Module Approach Way</h5>
       </div> */}
       {/* <BasicReactForm/> */}
-      <LifecycleA />
+      {/* <LifecycleA /> */}
+      <FragmentsInReactTable />
     </div>
   );
 }
