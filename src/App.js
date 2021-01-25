@@ -20,6 +20,7 @@ import FragmentsInReactTable from './react-basics-tutorials/FragmentsInReactTabl
 import ParentComponent from './react-basics-tutorials/ParentComponent';
 import MemoComp from './react-basics-tutorials/MemoComp';
 import RefInReact from './react-basics-tutorials/RefInReact';
+import FocusInput from './react-basics-tutorials/FocusInput';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -50,7 +51,8 @@ function App() {
       {/* <LifecycleA /> */}
       {/* <FragmentsInReactTable /> */}
       {/* <ParentComponent /> */}
-      <RefInReact />
+      {/* <RefInReact /> */}
+      <FocusInput />
     </div>
   );
 }
