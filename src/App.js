@@ -15,6 +15,7 @@ import Stylesheet from '../src/react-basics-tutorials/Stylesheet'
 import './appStyles.css'
 import Styles from './appStyles.module.css'
 import BasicReactForm from './react-basics-tutorials/BasicReactForm'
+import LifecycleA from './react-basics-tutorials/LifecycleA';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -41,7 +42,8 @@ function App() {
         <h5 className="error-color">CSS Style Normal Way</h5>
         <h5 className={Styles.success_color}>CSS Style Module Approach Way</h5>
       </div> */}
-      <BasicReactForm/>
+      {/* <BasicReactForm/> */}
+      <LifecycleA />
     </div>
   );
 }
