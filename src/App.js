@@ -19,6 +19,7 @@ import LifecycleA from './react-basics-tutorials/LifecycleA';
 import FragmentsInReactTable from './react-basics-tutorials/FragmentsInReactTable';
 import ParentComponent from './react-basics-tutorials/ParentComponent';
 import MemoComp from './react-basics-tutorials/MemoComp';
+import RefInReact from './react-basics-tutorials/RefInReact';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -48,7 +49,8 @@ function App() {
       {/* <BasicReactForm/> */}
       {/* <LifecycleA /> */}
       {/* <FragmentsInReactTable /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      <RefInReact />
     </div>
   );
 }
