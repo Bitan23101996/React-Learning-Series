@@ -22,6 +22,7 @@ import MemoComp from './react-basics-tutorials/MemoComp';
 import RefInReact from './react-basics-tutorials/RefInReact';
 import FocusInput from './react-basics-tutorials/FocusInput';
 import InputParentRefForwarding from './react-basics-tutorials/InputParentRefForwarding';
+import GetReqUsingAXIOS from './React-Http/GetReqUsingAXIOS';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -54,7 +55,8 @@ function App() {
       {/* <ParentComponent /> */}
       {/* <RefInReact /> */}
       {/* <FocusInput /> */}
-      <InputParentRefForwarding />
+      {/* <InputParentRefForwarding /> */}
+      <GetReqUsingAXIOS />
     </div>
   );
 }
