@@ -24,6 +24,7 @@ import FocusInput from './react-basics-tutorials/FocusInput';
 import InputParentRefForwarding from './react-basics-tutorials/InputParentRefForwarding';
 import GetReqUsingAXIOS from './React-Http/GetReqUsingAXIOS';
 import PostReqUsingAXIOS from './React-Http/PostReqUsingAXIOS';
+import PortalsDemoComp from './react-basics-tutorials/PortalsDemoComp';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -58,7 +59,8 @@ function App() {
       {/* <FocusInput /> */}
       {/* <InputParentRefForwarding /> */}
       {/* <GetReqUsingAXIOS /> */}
-      <PostReqUsingAXIOS />
+      {/* <PostReqUsingAXIOS /> */}
+      <PortalsDemoComp />
     </div>
   );
 }
