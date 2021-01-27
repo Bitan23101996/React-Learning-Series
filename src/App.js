@@ -37,6 +37,7 @@ import { UserProvider } from './react-basics-tutorials/userContext';
 import CounterHooks from './React-Hooks/CounterHooks';
 import CounterHooksTwo from './React-Hooks/CounterHooksTwo';
 import CounterHooksThree from './React-Hooks/CounterHooksThree';
+import CounterHooksFour from './React-Hooks/CounterHooksFour';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -127,7 +128,8 @@ function App() {
 
       {/* <CounterHooks /> */}
       {/* <CounterHooksTwo /> */}
-      <CounterHooksThree />
+      {/* <CounterHooksThree /> */}
+      <CounterHooksFour />
     </div>
   );
 }
