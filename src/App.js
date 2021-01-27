@@ -32,6 +32,8 @@ import CounterHoverText from './react-basics-tutorials/CounterHoverText';
 import CounterClickBtnTwo from './react-basics-tutorials/CounterClickBtnTwo';
 import CounterHoverTextTwo from './react-basics-tutorials/CounterHoverTextTwo';
 import CountRenderProps from './react-basics-tutorials/CountRenderProps';
+import ContextD from './react-basics-tutorials/ContextD';
+import { UserProvider } from './react-basics-tutorials/userContext';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -96,7 +98,7 @@ function App() {
 
 
       {/* ----------------Type 2 : Use of Render Props------------------ */}
-      <CountRenderProps>
+      {/* <CountRenderProps>
         {
           (count, incrementCount) => {
             return (
@@ -114,7 +116,11 @@ function App() {
             )
           }
         }
-      </CountRenderProps>
+      </CountRenderProps> */}
+
+      <UserProvider value="Bitan Das">
+        <ContextD />
+      </UserProvider>
 
     </div>
   );
