@@ -34,6 +34,7 @@ import CounterHoverTextTwo from './react-basics-tutorials/CounterHoverTextTwo';
 import CountRenderProps from './react-basics-tutorials/CountRenderProps';
 import ContextD from './react-basics-tutorials/ContextD';
 import { UserProvider } from './react-basics-tutorials/userContext';
+import CounterHooks from './React-Hooks/CounterHooks';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -118,10 +119,11 @@ function App() {
         }
       </CountRenderProps> */}
 
-      <UserProvider value="Bitan Das">
+      {/*   <UserProvider value="Bitan Das">
         <ContextD />
-      </UserProvider>
+      </UserProvider> */}
 
+      <CounterHooks />
     </div>
   );
 }
