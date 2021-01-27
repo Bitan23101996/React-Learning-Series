@@ -27,6 +27,8 @@ import PostReqUsingAXIOS from './React-Http/PostReqUsingAXIOS';
 import PortalsDemoComp from './react-basics-tutorials/PortalsDemoComp';
 import HeroErr from './react-basics-tutorials/HeroErr';
 import ErrorBoundary from './react-basics-tutorials/ErrorBoundary';
+import CounterClickBtn from './react-basics-tutorials/CounterClickBtn';
+import CounterHoverText from './react-basics-tutorials/CounterHoverText';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -63,7 +65,7 @@ function App() {
       {/* <GetReqUsingAXIOS /> */}
       {/* <PostReqUsingAXIOS /> */}
       {/* <PortalsDemoComp /> */}
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <HeroErr heroName="Superman" />
       </ErrorBoundary>
 
@@ -73,8 +75,10 @@ function App() {
 
       <ErrorBoundary>
         <HeroErr heroName="Joker" />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
 
+      <CounterClickBtn name="Bitan"/>
+      <CounterHoverText />
     </div>
   );
 }
