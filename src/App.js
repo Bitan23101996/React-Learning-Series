@@ -29,6 +29,9 @@ import HeroErr from './react-basics-tutorials/HeroErr';
 import ErrorBoundary from './react-basics-tutorials/ErrorBoundary';
 import CounterClickBtn from './react-basics-tutorials/CounterClickBtn';
 import CounterHoverText from './react-basics-tutorials/CounterHoverText';
+import CounterClickBtnTwo from './react-basics-tutorials/CounterClickBtnTwo';
+import CounterHoverTextTwo from './react-basics-tutorials/CounterHoverTextTwo';
+import CountRenderProps from './react-basics-tutorials/CountRenderProps';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -77,8 +80,42 @@ function App() {
         <HeroErr heroName="Joker" />
       </ErrorBoundary> */}
 
-      <CounterClickBtn name="Bitan"/>
-      <CounterHoverText />
+      {/* <CounterClickBtn name="Bitan"/>
+      <CounterHoverText /> */}
+
+
+      {/* ----------------Type 1 : Use of Render Props------------------ */}
+      {/* <CountRenderProps render={(count, incrementCount) => {
+        return <CounterClickBtnTwo count={count} incrementCount={incrementCount} />
+      }
+      } />
+      <CountRenderProps render={(count, incrementCount) => {
+        return <CounterHoverTextTwo count={count} incrementCount={incrementCount} />
+      }
+      } /> */}
+
+
+      {/* ----------------Type 2 : Use of Render Props------------------ */}
+      <CountRenderProps>
+        {
+          (count, incrementCount) => {
+            return (
+              <CounterClickBtnTwo count={count} incrementCount={incrementCount} />
+            )
+          }
+        }
+      </CountRenderProps>
+      
+      <CountRenderProps>
+        {
+          (count, incrementCount) => {
+            return (
+              <CounterHoverTextTwo count={count} incrementCount={incrementCount} />
+            )
+          }
+        }
+      </CountRenderProps>
+
     </div>
   );
 }
