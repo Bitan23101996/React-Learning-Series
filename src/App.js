@@ -39,6 +39,8 @@ import CounterHooksTwo from './React-Hooks/CounterHooksTwo';
 import CounterHooksThree from './React-Hooks/CounterHooksThree';
 import CounterHooksFour from './React-Hooks/CounterHooksFour';
 import CounterUsingUseEffect from './React-Hooks/CounterUsingUseEffect';
+import MouseEventHook from './React-Hooks/MouseEventHook';
+import MouseContainerHook from './React-Hooks/MouseContainerHook';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -131,7 +133,9 @@ function App() {
       {/* <CounterHooksTwo /> */}
       {/* <CounterHooksThree /> */}
       {/* <CounterHooksFour /> */}
-      <CounterUsingUseEffect />
+      {/* <CounterUsingUseEffect /> */}
+      {/* <MouseEventHook /> */}
+      <MouseContainerHook />
     </div>
   );
 }
