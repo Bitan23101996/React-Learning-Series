@@ -41,6 +41,8 @@ import CounterHooksFour from './React-Hooks/CounterHooksFour';
 import CounterUsingUseEffect from './React-Hooks/CounterUsingUseEffect';
 import MouseEventHook from './React-Hooks/MouseEventHook';
 import MouseContainerHook from './React-Hooks/MouseContainerHook';
+import ClassCounterInterval from './React-Hooks/ClassCounterInterval';
+import HookCounterInterval from './React-Hooks/HookCounterInterval';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -135,7 +137,9 @@ function App() {
       {/* <CounterHooksFour /> */}
       {/* <CounterUsingUseEffect /> */}
       {/* <MouseEventHook /> */}
-      <MouseContainerHook />
+      {/* <MouseContainerHook /> */}
+      <ClassCounterInterval />
+      <HookCounterInterval />
     </div>
   );
 }
