@@ -43,6 +43,7 @@ import MouseEventHook from './React-Hooks/MouseEventHook';
 import MouseContainerHook from './React-Hooks/MouseContainerHook';
 import ClassCounterInterval from './React-Hooks/ClassCounterInterval';
 import HookCounterInterval from './React-Hooks/HookCounterInterval';
+import FetchDataUsingAXIOS from './React-Hooks/FetchDataUsingAXIOS';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -138,8 +139,9 @@ function App() {
       {/* <CounterUsingUseEffect /> */}
       {/* <MouseEventHook /> */}
       {/* <MouseContainerHook /> */}
-      <ClassCounterInterval />
-      <HookCounterInterval />
+      {/* <ClassCounterInterval />
+      <HookCounterInterval /> */}
+      <FetchDataUsingAXIOS />
     </div>
   );
 }
