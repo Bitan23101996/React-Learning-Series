@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import FormikContainer from './components/FormikContainer';
@@ -49,6 +49,9 @@ import ContextC from './React-Hooks/ContextC';
 import CounterUsingReducerHook from './React-Hooks/CounterUsingReducerHook';
 import CounterUsingReducerHookTwo from './React-Hooks/CounterUsingReducerHookTwo';
 import CounterUsingMultipleReducerHook from './React-Hooks/CounterUsingMultipleReducerHook';
+import ReducerA from './React-Hooks/ReducerA';
+import ReducerB from './React-Hooks/ReducerB';
+import ReducerC from './React-Hooks/ReducerC';
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -62,32 +65,50 @@ const theme = extendTheme({ colors })
 //Exporting 2 context
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
+//Count Context
+export const CountContext = React.createContext();
+
+const initialValue = 0;
+const reducer = (state, action) => {
+  switch (action) {
+    case 'increment':
+      return state + 1
+    case 'decrement':
+      return state - 1
+    case 'reset':
+      return initialValue
+    default:
+      return state
+  }
+}
 
 function App() {
+  const [count, dispatch] = useReducer(reducer, initialValue)
   return (
-    <div className="App">
-      {/* <Message /> */}
-      {/* <Counter/> */}
-      {/* <EventBinding  name="Bitan" title="Das"/> */}
-      {/* <Parent /> */}
-      {/* <ConditionalRender/> */}
-      {/* <ListRendering/> */}
-      {/* <Stylesheet primaryTheme={true} />
+    <CountContext.Provider value={{ countValue: count, dispatchMethod: dispatch }}>
+      <div className="App">
+        {/* <Message /> */}
+        {/* <Counter/> */}
+        {/* <EventBinding  name="Bitan" title="Das"/> */}
+        {/* <Parent /> */}
+        {/* <ConditionalRender/> */}
+        {/* <ListRendering/> */}
+        {/* <Stylesheet primaryTheme={true} />
       <div>
         <h5 className="error-color">CSS Style Normal Way</h5>
         <h5 className={Styles.success_color}>CSS Style Module Approach Way</h5>
       </div> */}
-      {/* <BasicReactForm/> */}
-      {/* <LifecycleA /> */}
-      {/* <FragmentsInReactTable /> */}
-      {/* <ParentComponent /> */}
-      {/* <RefInReact /> */}
-      {/* <FocusInput /> */}
-      {/* <InputParentRefForwarding /> */}
-      {/* <GetReqUsingAXIOS /> */}
-      {/* <PostReqUsingAXIOS /> */}
-      {/* <PortalsDemoComp /> */}
-      {/* <ErrorBoundary>
+        {/* <BasicReactForm/> */}
+        {/* <LifecycleA /> */}
+        {/* <FragmentsInReactTable /> */}
+        {/* <ParentComponent /> */}
+        {/* <RefInReact /> */}
+        {/* <FocusInput /> */}
+        {/* <InputParentRefForwarding /> */}
+        {/* <GetReqUsingAXIOS /> */}
+        {/* <PostReqUsingAXIOS /> */}
+        {/* <PortalsDemoComp /> */}
+        {/* <ErrorBoundary>
         <HeroErr heroName="Superman" />
       </ErrorBoundary>
 
@@ -99,12 +120,12 @@ function App() {
         <HeroErr heroName="Joker" />
       </ErrorBoundary> */}
 
-      {/* <CounterClickBtn name="Bitan"/>
+        {/* <CounterClickBtn name="Bitan"/>
       <CounterHoverText /> */}
 
 
-      {/* ----------------Type 1 : Use of Render Props------------------ */}
-      {/* <CountRenderProps render={(count, incrementCount) => {
+        {/* ----------------Type 1 : Use of Render Props------------------ */}
+        {/* <CountRenderProps render={(count, incrementCount) => {
         return <CounterClickBtnTwo count={count} incrementCount={incrementCount} />
       }
       } />
@@ -114,8 +135,8 @@ function App() {
       } /> */}
 
 
-      {/* ----------------Type 2 : Use of Render Props------------------ */}
-      {/* <CountRenderProps>
+        {/* ----------------Type 2 : Use of Render Props------------------ */}
+        {/* <CountRenderProps>
         {
           (count, incrementCount) => {
             return (
@@ -135,29 +156,35 @@ function App() {
         }
       </CountRenderProps> */}
 
-      {/*   <UserProvider value="Bitan Das">
+        {/*   <UserProvider value="Bitan Das">
         <ContextD />
       </UserProvider> */}
 
-      {/* <CounterHooks /> */}
-      {/* <CounterHooksTwo /> */}
-      {/* <CounterHooksThree /> */}
-      {/* <CounterHooksFour /> */}
-      {/* <CounterUsingUseEffect /> */}
-      {/* <MouseEventHook /> */}
-      {/* <MouseContainerHook /> */}
-      {/* <ClassCounterInterval />
+        {/* <CounterHooks /> */}
+        {/* <CounterHooksTwo /> */}
+        {/* <CounterHooksThree /> */}
+        {/* <CounterHooksFour /> */}
+        {/* <CounterUsingUseEffect /> */}
+        {/* <MouseEventHook /> */}
+        {/* <MouseContainerHook /> */}
+        {/* <ClassCounterInterval />
       <HookCounterInterval /> */}
-      {/* <FetchDataUsingAXIOS /> */}
-      {/* <UserContext.Provider value={'Bitan Das'}>
+        {/* <FetchDataUsingAXIOS /> */}
+        {/* <UserContext.Provider value={'Bitan Das'}>
         <ChannelContext.Provider value={'AYB_Bitan'}>
           <ContextC />
         </ChannelContext.Provider>
       </UserContext.Provider> */}
-      {/* <CounterUsingReducerHook /> */}
-      {/* <CounterUsingReducerHookTwo /> */}
-      <CounterUsingMultipleReducerHook />
-    </div>
+        {/* <CounterUsingReducerHook /> */}
+        {/* <CounterUsingReducerHookTwo /> */}
+        {/* <CounterUsingMultipleReducerHook /> */}
+
+        <p>Count value in APP : {count}</p>
+        <ReducerA />
+        <ReducerB />
+        <ReducerC />
+      </div>
+    </CountContext.Provider>
   );
 }
 
