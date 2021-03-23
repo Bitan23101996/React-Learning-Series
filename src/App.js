@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import FormikContainer from './components/FormikContainer';
@@ -44,6 +45,7 @@ import MouseContainerHook from './React-Hooks/MouseContainerHook';
 import ClassCounterInterval from './React-Hooks/ClassCounterInterval';
 import HookCounterInterval from './React-Hooks/HookCounterInterval';
 import FetchDataUsingAXIOS from './React-Hooks/FetchDataUsingAXIOS';
+import ContextC from './React-Hooks/ContextC';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -55,6 +57,9 @@ const colors = {
 }
 
 const theme = extendTheme({ colors })
+//Exporting 2 context
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
   return (
@@ -141,7 +146,12 @@ function App() {
       {/* <MouseContainerHook /> */}
       {/* <ClassCounterInterval />
       <HookCounterInterval /> */}
-      <FetchDataUsingAXIOS />
+      {/* <FetchDataUsingAXIOS /> */}
+      <UserContext.Provider value={'Bitan Das'}>
+        <ChannelContext.Provider value={'AYB_Bitan'}>
+          <ContextC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
