@@ -46,7 +46,7 @@ import ClassCounterInterval from './React-Hooks/ClassCounterInterval';
 import HookCounterInterval from './React-Hooks/HookCounterInterval';
 import FetchDataUsingAXIOS from './React-Hooks/FetchDataUsingAXIOS';
 import ContextC from './React-Hooks/ContextC';
-
+import CounterUsingReducerHook from './React-Hooks/CounterUsingReducerHook';
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -147,11 +147,12 @@ function App() {
       {/* <ClassCounterInterval />
       <HookCounterInterval /> */}
       {/* <FetchDataUsingAXIOS /> */}
-      <UserContext.Provider value={'Bitan Das'}>
+      {/* <UserContext.Provider value={'Bitan Das'}>
         <ChannelContext.Provider value={'AYB_Bitan'}>
           <ContextC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+      <CounterUsingReducerHook />
     </div>
   );
 }
