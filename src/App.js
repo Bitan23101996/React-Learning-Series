@@ -53,6 +53,7 @@ import ReducerA from './React-Hooks/ReducerA';
 import ReducerB from './React-Hooks/ReducerB';
 import ReducerC from './React-Hooks/ReducerC';
 import DataFetchUsingStateAXIOS from './React-Hooks/DataFetchUsingStateAXIOS';
+import DataFetchUsingReducerAXIOS from './React-Hooks/DataFetchUsingReducerAXIOS';
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -185,7 +186,8 @@ function App() {
         <ReducerB />
         <ReducerC /> */}
 
-      <DataFetchUsingStateAXIOS />
+      {/* <DataFetchUsingStateAXIOS /> */}
+      <DataFetchUsingReducerAXIOS />
     </div>
     // </CountContext.Provider>
   );
