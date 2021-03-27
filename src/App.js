@@ -60,6 +60,8 @@ import UseRefHookInputFocusExample from './React-Hooks/UseRefHookInputFocusExamp
 import UseRefHookTimerExample from './React-Hooks/UseRefHookTimerExample';
 import ChangeDocumentTitleOne from './React-Hooks/ChangeDocumentTitleOne';
 import ChangeDocumentTitleTwo from './React-Hooks/ChangeDocumentTitleTwo';
+import CustomHookCounterOne from './React-Hooks/CustomHookCounterOne';
+import CustomHookCounterTwo from './React-Hooks/CustomHookCounterTwo';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -199,8 +201,10 @@ function App() {
       {/* <UseMemoHookExample /> */}
       {/* <UseRefHookInputFocusExample /> */}
       {/* <UseRefHookTimerExample /> */}
-      <ChangeDocumentTitleOne />
-      <ChangeDocumentTitleTwo />
+      {/*  <ChangeDocumentTitleOne />
+      <ChangeDocumentTitleTwo /> */}
+      <CustomHookCounterOne />
+      <CustomHookCounterTwo />
     </div>
     // </CountContext.Provider>
   );
