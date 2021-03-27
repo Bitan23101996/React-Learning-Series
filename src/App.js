@@ -58,6 +58,9 @@ import UseCallbackHookParent from './React-Hooks/UseCallbackHookParent';
 import UseMemoHookExample from './React-Hooks/UseMemoHookExample';
 import UseRefHookInputFocusExample from './React-Hooks/UseRefHookInputFocusExample';
 import UseRefHookTimerExample from './React-Hooks/UseRefHookTimerExample';
+import ChangeDocumentTitleOne from './React-Hooks/ChangeDocumentTitleOne';
+import ChangeDocumentTitleTwo from './React-Hooks/ChangeDocumentTitleTwo';
+
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
   brand: {
@@ -195,7 +198,9 @@ function App() {
       {/* <UseCallbackHookParent /> */}
       {/* <UseMemoHookExample /> */}
       {/* <UseRefHookInputFocusExample /> */}
-      <UseRefHookTimerExample />
+      {/* <UseRefHookTimerExample /> */}
+      <ChangeDocumentTitleOne />
+      <ChangeDocumentTitleTwo />
     </div>
     // </CountContext.Provider>
   );
