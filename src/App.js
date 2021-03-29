@@ -62,6 +62,7 @@ import ChangeDocumentTitleOne from './React-Hooks/ChangeDocumentTitleOne';
 import ChangeDocumentTitleTwo from './React-Hooks/ChangeDocumentTitleTwo';
 import CustomHookCounterOne from './React-Hooks/CustomHookCounterOne';
 import CustomHookCounterTwo from './React-Hooks/CustomHookCounterTwo';
+import SubmitUserForm from './React-Hooks/SubmitUserForm';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -203,8 +204,9 @@ function App() {
       {/* <UseRefHookTimerExample /> */}
       {/*  <ChangeDocumentTitleOne />
       <ChangeDocumentTitleTwo /> */}
-      <CustomHookCounterOne />
-      <CustomHookCounterTwo />
+      {/* <CustomHookCounterOne />
+      <CustomHookCounterTwo /> */}
+      <SubmitUserForm />
     </div>
     // </CountContext.Provider>
   );
